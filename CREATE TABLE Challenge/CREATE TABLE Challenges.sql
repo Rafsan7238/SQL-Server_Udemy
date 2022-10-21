@@ -97,3 +97,26 @@ VALUES
     ('Miriam', 'Yardley', '20201205', 1);
 
 SELECT * FROM dbo.emp;
+
+/*
+### **UPDATE STATEMENT Challenge**
+
+Challenge: Use an UPDATE statement to change Miriam's last name from 'Yardley' to 'Greenbank' in the dbo.emp table. Identify Miriam by her emp\_id number in the WHERE clause of the UPDATE statement.
+*/
+
+UPDATE dbo.emp 
+SET last_name = 'Greenbank'
+WHERE emp_id = 2;
+
+SELECT * FROM dbo.emp;
+
+/*
+### **DELETE STATEMENT Challenge**
+
+Challenge: Use a DELETE statement to delete employee 'Scott Davis' from the dbo.emp table. Identify Scott by his emp\_id number in the WHERE clause of the DELETE statement.
+*/
+
+DELETE FROM dbo.emp 
+WHERE emp_id = 1;
+
+SELECT * FROM dbo.emp;
